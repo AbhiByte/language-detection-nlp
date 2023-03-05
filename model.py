@@ -33,7 +33,7 @@ SGD_model = SGDClassifier()
 SGD_model.fit(X_train, y_train)
 y_pred_sgd = SGD_model.predict(X_test)
 acc_score_sgd = accuracy_score(y_pred_sgd, y_test)
-cm_mb = confusion_matrix(y_test, y_pred_sgd)
+cm_sgd = confusion_matrix(y_test, y_pred_sgd)
 print('accuracy %s' % acc_score_sgd)
 
 #Plot mnb results
